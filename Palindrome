@@ -1,1 +1,21 @@
+import java.util.Scanner;
+
+public class Reference {
+	public static void main(String[] args ) {
+		
+		Scanner s = new Scanner(System.in);
+		System.out.println("Enter a characters : ");
+		String c1 = s.next();
+		String c2 = "";
+		for(int i=c1.length()-1;i>=0;i--) {
+			c2 = c2 + c1.charAt(i);
+		}
+		
+		System.out.println(c2);
+		if(c1.equals(c2))
+			System.out.println("Palindrome");
+		else System.out.println("Not palindrome");
+		s.close();
+		}
+    }
 
